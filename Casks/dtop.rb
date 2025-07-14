@@ -2,7 +2,7 @@
 cask "dtop" do
   desc "dtop - A top-like tool for Docker containers"
   homepage "https://github.com/amir20/dtop"
-  version "0.0.26"
+  version "0.0.28"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,31 @@ cask "dtop" do
 
   on_macos do
     on_intel do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.26/dtop_darwin_x86_64.tar.gz"
-      sha256 "d189ecadf27e12366ef05c4985f3b472e2cd35f15154d316de01389b38af5d04"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_darwin_x86_64.tar.gz"
+      sha256 "0426d7cece848f20356fc9b8f63d4ccdbcc4a83b9c7f711da6f51a273aaf753d"
     end
     on_arm do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.26/dtop_darwin_arm64.tar.gz"
-      sha256 "676901c1ce53c06d2e2918a9f01ca5fa5828c08d149363b84f075ceab75f8c2c"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_darwin_arm64.tar.gz"
+      sha256 "1ddaec109b719850b422a61ba2f5d912bd9d3b5efe53a730c99403261c5ec97f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.26/dtop_linux_x86_64.tar.gz"
-      sha256 "ebc73dbc2f0063e2c87448835b9010a7fba92046a78c2a76227db74dfc21d656"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_linux_x86_64.tar.gz"
+      sha256 "e43a82ae97dd2a9d99d8767944fc583b6d7432a669d162c1f00b35d7332a4063"
     end
     on_arm do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.26/dtop_linux_arm64.tar.gz"
-      sha256 "4838b1c7b9e96c79779435e03b6a11cc7444a958ed34e6751fb1fd85b3a440d8"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_linux_arm64.tar.gz"
+      sha256 "6c8f2189ecc84892cd300a2d1ce08901225b15ce6eee829f4d62b70895b389e0"
     end
   end
 
   postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/dtop"]
+    if OS.mac?
+      if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+        system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/dtop"]
+      end
     end
   end
 

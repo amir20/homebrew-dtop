@@ -5,21 +5,21 @@
 class Dtop < Formula
   desc "dtop - A top-like tool for Docker containers"
   homepage "https://github.com/amir20/dtop"
-  version "0.0.27"
+  version "0.0.28"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amir20/dtop/releases/download/v0.0.27/dtop_darwin_x86_64.tar.gz"
-      sha256 "5c5f74d5323e521659f451288d22e45939af0f011bf70e7baa140532436b8f5f"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_darwin_x86_64.tar.gz"
+      sha256 "0426d7cece848f20356fc9b8f63d4ccdbcc4a83b9c7f711da6f51a273aaf753d"
 
       def install
         bin.install "dtop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amir20/dtop/releases/download/v0.0.27/dtop_darwin_arm64.tar.gz"
-      sha256 "b29fc50a712c250dee203c6a9430c0d83d3100b782a4ce3ea910549e8692dd7d"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_darwin_arm64.tar.gz"
+      sha256 "1ddaec109b719850b422a61ba2f5d912bd9d3b5efe53a730c99403261c5ec97f"
 
       def install
         bin.install "dtop"
@@ -29,22 +29,22 @@ class Dtop < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/amir20/dtop/releases/download/v0.0.27/dtop_linux_x86_64.tar.gz"
-      sha256 "5f0866fa51a9df5a013a7878d5c4e45d1ad684104bd27ce57df0c3bc309d4a96"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_linux_x86_64.tar.gz"
+      sha256 "e43a82ae97dd2a9d99d8767944fc583b6d7432a669d162c1f00b35d7332a4063"
       def install
         bin.install "dtop"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/amir20/dtop/releases/download/v0.0.27/dtop_linux_armv6.tar.gz"
-      sha256 "965cd59c80d319608fd0e8f8e30d57f251474b1610f304219e69f19578bdb802"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_linux_armv6.tar.gz"
+      sha256 "ed827f640d605940204746bb8719148a5a9d3139ea39d32b1af9314b5edf063e"
       def install
         bin.install "dtop"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/amir20/dtop/releases/download/v0.0.27/dtop_linux_arm64.tar.gz"
-      sha256 "1ad28b859a209a8cdc870081e5580acc63fffdea7283edd943c285789d9a93ba"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.28/dtop_linux_arm64.tar.gz"
+      sha256 "6c8f2189ecc84892cd300a2d1ce08901225b15ce6eee829f4d62b70895b389e0"
       def install
         bin.install "dtop"
       end

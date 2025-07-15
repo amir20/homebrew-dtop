@@ -2,7 +2,7 @@
 cask "dtop" do
   desc "dtop - A top-like tool for Docker containers"
   homepage "https://github.com/amir20/dtop"
-  version "0.0.32"
+  version "0.0.33"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "dtop" do
 
   on_macos do
     on_intel do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.32/dtop_darwin_x86_64.tar.gz"
-      sha256 "c7b678f8e42ba288899d471f30c26dd64e9ea35e765c4cb06d041054a2680639"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.33/dtop_darwin_x86_64.tar.gz"
+      sha256 "9a16c5772d33bb14341725afec407aac8837f0f45c02e66820f311a0e5c6939f"
     end
     on_arm do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.32/dtop_darwin_arm64.tar.gz"
-      sha256 "c1f2300aa9d92c5e48b9011ec921eceb4c7899fcad8ab60152f71951a449d15c"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.33/dtop_darwin_arm64.tar.gz"
+      sha256 "ea7e8d5281d7744046d3d373095ebadfc07f533d6e5f1e1b7ea61bb99de4d1a9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.32/dtop_linux_x86_64.tar.gz"
-      sha256 "9a83d68dda5cf8328572ef65ca3789054afd7ff9aab2e32a927ff288894b57cd"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.33/dtop_linux_x86_64.tar.gz"
+      sha256 "8af208e035983521af943c1c1d0772d9fd5c308cf04eca30099a626ec45fc91f"
     end
     on_arm do
-      url "https://github.com/amir20/dtop/releases/download/v0.0.32/dtop_linux_arm64.tar.gz"
-      sha256 "11549e3e91448a0b6b66138186d365a2b8ad074f2936a3992ccb73a180ddcf6e"
+      url "https://github.com/amir20/dtop/releases/download/v0.0.33/dtop_linux_arm64.tar.gz"
+      sha256 "95de3debae188c6712ec4903535c0e76f64a15e403383204456ac37ac3b9eaee"
     end
   end
 

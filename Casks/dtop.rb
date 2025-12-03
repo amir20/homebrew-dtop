@@ -5,27 +5,27 @@
 # Do not modify this file manually.
 
 cask "dtop" do
-  version "0.6.4"
+  version "0.6.5"
 
   on_intel do
     on_macos do
-      url "https://github.com/amir20/dtop/releases/download/v0.6.4/dtop-x86_64-apple-darwin.tar.gz"
-      sha256 "190afc3e823887adb640607c75c34c4d3e18958df8675f6c407d4ef29e61a159"
+      url "https://github.com/amir20/dtop/releases/download/v0.6.5/dtop-x86_64-apple-darwin.tar.gz"
+      sha256 "79b9f291d8ffd5e869f3b11d4ed4f501e0accf97544ad28533395d2171fb7a9d"
     end
     on_linux do
-      url "https://github.com/amir20/dtop/releases/download/v0.6.4/dtop-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5c4a45ef484c3ecc20d5db0bb674baf8a4204d8983e73f459758148dc0c8053f"
+      url "https://github.com/amir20/dtop/releases/download/v0.6.5/dtop-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "660d9628ff4f6b49f22b071477607efb7c074a32732b407256c895914b61c8b1"
     end
   end
 
   on_arm do
     on_macos do
-      url "https://github.com/amir20/dtop/releases/download/v0.6.4/dtop-aarch64-apple-darwin.tar.gz"
-      sha256 "1b26c5b04f6a51b92f8ecc97233c8e2c1b4b453a8fde0fe1eacfdd4b52cb85ee"
+      url "https://github.com/amir20/dtop/releases/download/v0.6.5/dtop-aarch64-apple-darwin.tar.gz"
+      sha256 "3488faae91aad59cfe36d2cd54704223b22d0e008560c144731d5ceae7892ac8"
     end
     on_linux do
-      url "https://github.com/amir20/dtop/releases/download/v0.6.4/dtop-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cc3ed3ba2fc94d87cbace10ea3576a0a706eaeef4c4df4f7a7ac763b04b0005a"
+      url "https://github.com/amir20/dtop/releases/download/v0.6.5/dtop-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ae2f078810d48f41ccc213635636e78bff43b8dcd3faee51303019c9dc8f0ec6"
     end
   end
 

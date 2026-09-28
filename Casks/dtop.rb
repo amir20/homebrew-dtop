@@ -37,10 +37,10 @@ cask "dtop" do
     on_macos do
       binary "dtop-x86_64-apple-darwin/dtop"
 
-      postflight do
-        system_command "/usr/bin/xattr",
-                      args: ["-d", "com.apple.quarantine", "#{staged_path}/dtop-x86_64-apple-darwin/dtop"],
-                      must_succeed: false
+      postflight_steps do
+        run "/usr/bin/xattr",
+            args:         ["-d", "com.apple.quarantine", "{{staged_path}}/dtop-x86_64-apple-darwin/dtop"],
+            must_succeed: false
       end
     end
     on_linux do
@@ -52,10 +52,10 @@ cask "dtop" do
     on_macos do
       binary "dtop-aarch64-apple-darwin/dtop"
 
-      postflight do
-        system_command "/usr/bin/xattr",
-                      args: ["-d", "com.apple.quarantine", "#{staged_path}/dtop-aarch64-apple-darwin/dtop"],
-                      must_succeed: false
+      postflight_steps do
+        run "/usr/bin/xattr",
+            args:         ["-d", "com.apple.quarantine", "{{staged_path}}/dtop-aarch64-apple-darwin/dtop"],
+            must_succeed: false
       end
     end
     on_linux do
